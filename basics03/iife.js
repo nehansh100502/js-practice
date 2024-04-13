@@ -1,6 +1,5 @@
 // immedeitely invoked function expresssions (IIFE)
 
-
 (function chai(){
     console.log(`DB connected`)
 })();
@@ -13,8 +12,8 @@
 
 })();
 
-
 ( function aurcode (name){
     console.log(`DB connected sucessfuly ${name}`)
 
 })("nehasingh")
+
