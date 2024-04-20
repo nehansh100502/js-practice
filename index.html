@@ -23,6 +23,11 @@
         </ul>
 
     </div>
+
+    <button id="orange">Button Clicked</button>
+    <button id="green">click</button>
+
+    
     
 </body>
 <script>
@@ -87,5 +92,40 @@ const div = document.createElement("div")
    //remove
    const lastLang = document.querySelector("li:last-child")
    lastLang.remove()
+   </script>
+   <script>
+//button click.....
+   class React{
+    constructor(){
+        this.library = "react"
+        this.server = "https://localhost:300"
+
+        //requirement
+        .document.querySelector("button")
+        .addEventListener("click", this.handleClick.bind(this))
+        //bind keyword 
+    }
+    handleClick(){
+        console.log("button click")
+        console.log(this.server);
+        // console.log(this)
+    }
+   }
+   const app = new React()
+</script>
+<script>
+    // document.getElementById("orange").onclick= function(){
+    //     document.body.style.backgroundColor=`orange`
+    // }
+    // document.getElementById("green").onclick= function(){
+    //     document.body.style.backgroundColor=`green`
+    // }
+    function clickHandler(color){
+        return function(){
+            document.body.style.backgroundColor  = `${color}`
+        }
+    }
+    document.getElementById("orange").onclick = clickHandler(`orange`)
+    document.getElementById("green").onclick = clickHandler(`green`)
 </script>
 </html>

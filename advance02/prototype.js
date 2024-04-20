@@ -79,3 +79,4 @@ String.prototype.trueLength = function(){
     console.log(`true length is ${this.trim().length}`)
 }
 anotheruser.trueLength()
+
